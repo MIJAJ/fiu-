@@ -72,5 +72,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "scripts": {
+    "build: "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
+  },
 }
