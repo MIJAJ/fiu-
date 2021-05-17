@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 80"
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
@@ -72,10 +72,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "scripts": {
-    "build: "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export"
-  },
+  }
 }
