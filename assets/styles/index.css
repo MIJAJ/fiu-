@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  .display-width {
+    @apply max-w-[900px];
+  }
+}
+
+@layer components {
+  .btn-base {
+    @apply p-4 bg-[#FF0000FF] border border-gray-600 rounded mt-5 transition;
+  }
+  .btn-primary {
+    @apply p-4 border border-gray-600 rounded mt-5;
+  }
+}
+
+@layer utilities {
+  @variants responsive,hover,focus,active {
+    .ford-variant {
+      @apply shadow-md transform motion-safe:scale-[1.2];
+    }
+  }
+}
+
+body {
+  background-color: #fff;
+}
+
+*,
+*:focus,
+*:active {
+  outline: none !important;
+}
